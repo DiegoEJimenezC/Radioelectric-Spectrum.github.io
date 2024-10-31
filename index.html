@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSL vs FTTH: Operating Principles</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-left: 240px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #0056b3;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        p, li {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        .team {
+            background-color: #e7f0ff;
+            padding: 15px;
+            border-left: 5px solid #0056b3;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .conclusions {
+            margin-top: 30px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-left: 5px solid #28a745;
+            border-radius: 8px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .highlight {
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+        .references {
+            margin-top: 30px;
+        }
+        .toc {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 200px;
+            background-color: #e7f0ff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .toc h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc ul li {
+            margin-bottom: 5px;
+        }
+        .toc ul li a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .toc ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+	    <li><a href="#team">Team Members</a></li>
+        <li><a href="#Mx">Mexican radio spectrum</a></li>
+        <li><a href="#main-bands">VHF and UHF</a></li>
+	    <li><a href="#important">License-Free Frequencies</a></li>
+        <li><a href="#1">General Band and Service Distribution</a></li>
+	    <li><a href="#ftth-Fiber">Important Characteristics</a></li>
+        <li><a href="#2">Importance of the Radioelectric Spectrum in Mexico</li></a>
+        <li><a href="#DSA">Dynamic Spectrum Access (DSA)</a></li>
+        <li><a href="#3">Licensing Models and Unlicensed Spectrum Expansion</a></li>
+        <li><a href="#conclusions">Conclusions</a></li>
+        <li><a href="#references">References</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Radioelectric Spectrum in Mexico</h1>
+
+        <!-- Team Members -->
+        <div class="team" id="team">
+            <h2> Autonomous University of the State of Mexico</h2>
+            <li> Network architecture  2024b </li>
+            <li>Teacher -> Dr. en A.P Cozobi Garcia Herrera</li>
+            <br><h2>Team Members</h2>
+            <li>DIEGO EMILIANO JIMENEZ CONTLA</li>
+            <li>ERIKA COTONIETO ORTEGA</li>
+            <li>CHRISTOFER EDWARD RODRIGUEZ MARTINEZ</li>
+            <li>CARLOS ALFONSO RODRIGUEZ REYES</li>
+        </div>
+
+        <h2 id="Mx">Mexican radio spectrum</h2>
+        <p>
+            In Mexico, the administration of the radioelectric spectrum is managed by the Federal Institute of Telecommunications (IFT), which regulates and controls its use in accordance with national and international standards. Mexico is part of the ITU Region 2, alongside other countries in the Americas, meaning it adheres to ITU agreements and recommendations regarding frequency use.        </p>
+        <h2 id="main-bands">Main Bands: VHF and UHF</h2>
+        <p>
+            VHF (Very High Frequency): Covers frequencies between 30 MHz and 300 MHz. In Mexico, this band is primarily used for FM radio (88-108 MHz), maritime and aeronautical communications, and open TV services on channels 2 to 13 (54-216 MHz).        </p>
+        <p>
+            UHF (Ultra High Frequency): Covers frequencies from 300 MHz to 3 GHz. In Mexico, the UHF band is used for digital TV services (channels 14-36 in the 470-698 MHz range), mobile phone services, mobile communication systems, and some satellite services.        </p>
+        <h2 id="free-frequency">License-Free Frequencies (ISL - Industrial, Scientific, and Medical)</h2>
+        <p>
+            Mexico has license-free frequency bands, which do not require a license for use but are subject to technical regulations to avoid interference. The most common license-free bands are:        </p>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Frequency bands</th>
+                    <th>Application</th>
+                </tr>
+                <tr>
+                    <td>902-928 MHz</td>
+                    <td>Used for devices like cordless phones.</td>
+                </tr>
+                <tr>
+                    <td>2.4 GHz (2400-2483.5 MHz)</td>
+                    <td>Used in Wi-Fi networks, Bluetooth, and industrial microwave applications.</td>
+                </tr>
+                <tr>
+                    <td>5 GHz (5150-5850 MHz)</td>
+                    <td>Used for high-speed Wi-Fi networks.</td>
+                </tr>
+            </table>
+        </div>
+       
+        <h2 id="1">General Band and Service Distribution</h2> 
+<p>
+    AM Radio: 
+    Bands from 535 kHz to 1705 kHz, where amplitude modulation radio stations are located.
+</p><p>
+    FM Radio: 
+    Bands from 88 MHz to 108 MHz, reserved for frequency modulation radio.
+</p><p>
+    Digital Terrestrial Television (DTT): 
+    Uses frequencies in the VHF and UHF bands (primarily from 54 to 698 MHz) for open television broadcasting.
+</p><p>
+    Mobile Telephony: 
+    Found in the 800 MHz, 1900 MHz, and 2.5 GHz bands, and recently in the 700 MHz and 3.5 GHz bands for technologies like 4G LTE and 5G.
+</p><p>
+    Satellite Services: 
+    The L (1-2 GHz), S (2-4 GHz), C (4-8 GHz), Ku (12-18 GHz), and Ka (26.5-40 GHz) bands are used for various satellite communication services, including internet and television.
+</p>
+
+<h2 id="important">Other Important Characteristics</h2>
+        <p>
+            Mexico also participates in international ITU conferences to review and coordinate spectrum standards and regulations globally, tailoring its spectrum policy to the local needs of telecommunications, broadcasting, and satellite services.        </p>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Standard </th>
+                    <th>Application</th>
+                </tr>
+                <tr>
+                    <td>Emergency and Security Channels</td>
+                    <td>Certain frequencies are reserved exclusively for public safety, emergency, and civil protection services.</td>
+                </tr>
+                <tr>
+                    <td>700 MHz Band</td>
+                    <td>Dedicated to the Shared Network, a public infrastructure project to provide connectivity in underserved rural and urban areas.</td>
+                </tr>
+                <tr>
+                    <td>Millimeter Wave Bands (mmWave)</td>
+                    <td>Frequencies above 24 GHz, which are being enabled for 5G services, improving network speed and capacity.</td>
+                </tr>
+            </table>
+        </div>
+      
+<h2 id="2">Importance of the Radioelectric Spectrum in Mexico</h2> 
+<p>
+Transmission Medium: ADSL uses existing copper lines, while FTTH uses fiber-optic cables, which are far superior in terms of speed and capacity.
+</p><p>Signal Type: ADSL transmits electrical signals, while FTTH transmits light, enabling much faster speeds and more reliable connections.
+</p><p>Distance Sensitivity: ADSL suffers from signal degradation over long distances, while FTTH maintains high performance over much greater distances.
+</p>
+
+<h2 id="DSA">Dynamic Spectrum Access (DSA) and Spectrum Sharing</h2> 
+<p>
+    With increasing demand for wireless communication, Dynamic Spectrum Access (DSA) and Spectrum Sharing are becoming crucial in maximizing spectrum efficiency. These approaches allow multiple users or services to share the same frequency band under specific conditions, especially in areas with high demand for connectivity or limited spectrum availability.
+<br>
+    In Mexico, the IFT has begun exploring policies for shared spectrum access to optimize frequency use, especially in urban regions with dense population centers where demand for mobile data and wireless internet is high. 
+ <br></br>   Some key aspects include:</p><p>White Space Utilization: White spaces refer to unused or underutilized spectrum in the VHF and UHF bands. DSA technology can identify and allocate these spaces dynamically to different users, such as rural broadband or IoT (Internet of Things) networks, without causing interference.
+    <br>Secondary Spectrum Use: Allows secondary users to access certain frequencies without affecting primary licensed services. This approach is used mainly for experimental purposes, such as IoT applications and non-critical communications in regions where spectrum is underutilized.</p>
+    <br><h2 id="3">Licensing Models and Unlicensed Spectrum Expansion</h2> <p>
+        Mexico also adapts its licensing models to encourage innovation:<br>
+        Exclusive Licensing: Traditional licensing where spectrum rights are exclusively assigned to one entity. This model is used for cellular operators in key bands like 700 MHz and 3.5 GHz for 4G/5G services.
+    </p><p>
+        Unlicensed Spectrum Expansion: Expanding unlicensed frequencies, especially in Wi-Fi bands (like 6 GHz), is becoming vital to improve wireless capacity in urban and public areas, supporting smart cities and high-density data environments.
+    </p>    
+
+    <!-- Conclusions Section -->
+        <div class="conclusions" id="conclusions">
+            <h2>Conclusions</h2>
+            <p>
+                CHRISTOFER EDWARD ->  Proper management of the radio spectrum is essential to ensure the orderly and efficient operation of critical services such as telephony, internet, and emergency systems. By dividing and regulating frequencies, it promotes a technological environment where multiple services can coexist without interference, driving connectivity and the development of new technologies for the benefit of society.
+            </p><p>
+                CARLOS ALFONSO ->  These initiatives position Mexico to effectively support future technologies, including 5G, IoT, and smart cities, meeting both current and emerging connectivity demands.
+            </p>
+            <p>DIEGO JIMENEZ ->  In summary, Mexico's management of the radioelectric spectrum, overseen by the Federal Institute of Telecommunications (IFT), plays a critical role in ensuring efficient, reliable, and innovative use of frequencies. With dedicated bands for services like FM/AM radio, digital television, and cellular networks, as well as unlicensed bands for Wi-Fi and IoT applications, Mexico supports diverse communication needs while adhering to international ITU guidelines.</p>
+            <p>ERIKA COTONIETO ->   The State is responsible for maintaining control of the radio spectrum, according to article 10 of the LFT, since it classifies it for exploitation according to the use of its bands.</p> 
+        </div>
+
+        <!-- References Section -->
+        <div class="references" id="references">
+            <h2>References</h2> 
+<ul>
+    <li>[1] Pando Networks, Broadband in Latin America: Insignificant, September 2020.
+        Available at:    <a target="_blank" href="http://alt1040.com/2011/09/banda-ancha-en-america-latina-insignificante  "><br>http://alt1040.com/2011/09/banda-ancha-en-america-latina-insignificante  </a></li>
+    <li>[2] Cisco Visual Networking Index, Global Mobile Data Traffic Forecast Update,(2011–2016, February 2012).  Available at: <a target="_blank" href="http://www.cisco.com/en/US/solutions/collateral/ns341/ns525/ns537/ns705/ns827/white_paper_c11-520862.pdf"><br>http://www.cisco.com/en/US/solutions/collateral/ns341/ns525/ns537/ns705/ns827/white_paper_c11-520862.pdf</a></li>
+    <li>[3] Federal Telecommunications Commission, Telecommunications Social Coverage Fund Contract, Mexico (2020) Available at:<a target="_blank" href="http://www.cofetel.gob.mx/es/Cofetel_2008/contrato_foncos_2020"><br>http://www.cofetel.gob.mx/es/Cofetel_2008/contrato_foncos_2020</a></li>
+    <li>Frenzel, Louis L. (May 2014). Electronic Communications.   Available at:<a target="_blank" href="https://es.slideshare.net/slideshow/sistemas-electronicosdecomunicacionesfrenzel/39112870"><br>https://es.slideshare.net/slideshow/sistemas-electronicosdecomunicacionesfrenzel/39112870</a></li>
+</ul>
+<footer>
+    &copy; Network Architecture 2024b CUVT
+</footer>
+    </div>
+</body>
+</html>
